@@ -1,4 +1,6 @@
 {
+  "name": "tutor-semantic-release",
+  "description": "This is a tutorial for semantic version to automate the release process",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.0.0",
@@ -6,15 +8,5 @@
     "@semantic-release/npm": "^11.0.0",
     "@semantic-release/release-notes-generator": "^12.0.0",
     "semantic-release": "^22.0.4"
-  },
-  "release": {
-    "plugins": [
-     "@semantic-release/commit-analyzer",
-     "@semantic-release/release-notes-generator",
-     ["@semantic-release/npm",{"npmPublish":false}],
-     "@semantic-release/changelog",
-     "@semantic-release/git"
-   ],
-   "branch": "main"
- }
+  }
 }
