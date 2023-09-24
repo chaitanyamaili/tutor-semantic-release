@@ -8,5 +8,8 @@
     "@semantic-release/npm": "^11.0.0",
     "@semantic-release/release-notes-generator": "^12.0.0",
     "semantic-release": "^22.0.4"
+  },
+  "optionalDependencies": {
+    "esbuild": "^0.19.3"
   }
 }
