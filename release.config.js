@@ -1,12 +1,19 @@
 const config = {
     branches: ['main'],
     plugins: [
-      '@semantic-release/commit-analyzer',
+      [
+        '@semantic-release/commit-analyzer',
+        {
+          preset: 'atom'
+        }
+      ],
       '@semantic-release/release-notes-generator',
-      ["@semantic-release/git", {
-        "assets": ["index.html", "package.json"],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }],
+      [
+        "@semantic-release/git", {
+          "assets": ["index.html", "package.json"],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
       '@semantic-release/github'
     ]
   };
